@@ -1,21 +1,17 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/pessoa';
 
 function App() {
-
-  const name = "Wender"
-  const url = "https://cdn-icons-png.flaticon.com/512/5969/5969113.png"
-
   return (
     <div className="App">
-      <h1>Meu primeiro projeto React</h1>
-      <p>Me chamo, {name}</p>
-      <img src={url} alt="Minha Imagem"/>
       <HelloWorld/>
+      <SayMyName name="Wender"/>
+      <SayMyName name="Tobias"/>
+      <Pessoa name="Wender" age="23" occupation="Programador" photo="https://via.placeholder.com/150"/>
     </div>
   );
-
-
 }
 
 export default App;
